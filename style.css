@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.main_box{
+    background: url("photo.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: repeat;
+    
+    
+}
+.btn_one i{
+color: white;
+font-size: 30px;
+font-weight: 700;
+position: absolute;
+left: 16px;
+line-height: 60px;
+cursor: pointer;
+transition: all 0.2s linear;
+
+}
+.sidebar_menu{
+    position: fixed;
+    left: -350px;
+    height: 100vh;
+    width: 300px;
+    
+    box-shadow: 0 0 6px rgb(113 6 6);
+    transition: all 0.5s linear;
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.7);
+    height: 60px;
+
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+  
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+.sidebar_menu .btn_two i{
+color: grey;
+line-height: 60px;
+font-size: 25px;
+position: absolute;
+left: 270px;
+opacity: 0;
+cursor: pointer;
+transition: all 0.2s linear;
+
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 8px 20px;
+    background-color: rgba(255, 255, 255, 0.644);
+    
+}
+.sidebar_menu .menu i, a{
+    color: black;
+  font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+.sidebar_menu .social_media{
+   
+    position: absolute;
+    left: 25%;
+    bottom: 20px;
+}
+.sidebar_menu .social_media i{
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+    background-color: white;
+
+}
+.btn_one i:hover{
+    font-size: 32px;
+
+}
+.btn_two i:hover{
+    font-size: 30px;
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+    background-color: black;
+    opacity: 1;
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+    
+}
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;
+    
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------- */
+
+
+.main_content{
+    color: white;
+    display: flex;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.7) ;
+  justify-content: center;
+  background-color: rgba(63, 8, 8, 0.39);
+}
+
+#brand {    
+    font-size: 2.5rem; 
+    font-weight: 700;   
+    text-align: center;
+    height: 80px;
+    width: 250px;
+}
+#brand:hover{
+    font-size: 2.6rem;
+    font-weight: 900 ;
+    color: rgba(255, 255, 255, 0.815);
+}
+#country{
+    font-size: 1.3rem ;
+    font-weight: 700;
+    opacity: 0.6;
+text-align: center;
+}
+
+.latestpro_class h1{
+    color: rgb(245, 245, 245);
+    text-decoration: underline rgba(255, 255, 255, 0.466);
+    text-align: center;
+    margin: 30px;
+}
+
+
+
+
+
+.camera{
+    display: flex;
+ justify-content: space-evenly;
+}
+.camera div{
+    background-color: rgba(0, 0, 0, 0.644);
+    color: white;
+    padding: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.7) ;
+
+}
+.camera div:hover{
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.7) ;
+    background-color: rgba(0, 0, 0, 0.795);
+
+
+}
+.cards img{
+    width: 150px;
+    height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.7) ;
+  background-color: black;
+}
+.cards h3{
+    text-align: center;
+    font-weight: 900;
+    font-size: 22px;
+}
+.cards{
+    width:350px;
+}
+
+.price{
+    text-align: center;
+  margin-bottom: 10px;
+}
+.camera p{
+    opacity: 0.8;
+}
+.cards div span{
+    opacity: 0.3;
+}
+.cards div p{
+    font-weight: 800;
+}
