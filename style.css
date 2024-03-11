@@ -195,7 +195,7 @@ text-align: center;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.7) ;
   background-color: black;
 }
-.cards h3{
+.cards h3 {
     text-align: center;
     font-weight: 900;
     font-size: 22px;
@@ -216,4 +216,20 @@ text-align: center;
 }
 .cards div p{
     font-weight: 800;
+}
+
+@media(max-width: 450px){
+    .camera{
+        flex-wrap: wrap;
+    }
+}
+.cards h3 a{
+    text-decoration: none;
+    color: white;
+}
+.cards h3 a:hover{
+    /* text-decoration: underline white; */
+    text-decoration-thickness: 1px;
+    color: rgba(226, 216, 210, 0.849);
+    font-size: 21px;
 }
